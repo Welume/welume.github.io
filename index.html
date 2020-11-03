@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zakład pogrzebowy Robert Kur</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        a:hover {
+            text-decoration: none;
+        }
+        .cont {
+            min-height: 100vh;
+            background-color: #211715;
+            padding-top: 150px;
+        }
+
+        .main {
+            background-color: white;
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .header {
+
+        }
+
+        .img-wrapper {
+            width: 191px;
+            margin-bottom: -20px;
+        }
+
+        .img-wrapper img {
+            width: 100%;
+        }
+
+        .main-text {
+            flex-grow: 1;
+            padding: 10px;
+        }
+
+        .list {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: white;
+            align-items: center;
+            height: 43px;
+        }
+
+        .dot {
+            transform: rotate(45deg);
+            background-color: black;
+            width: 4px;
+            height: 4px;
+        }
+        .info {
+            display: flex;
+            margin-top: 20px;
+        }
+        .column {
+            width: 50%;
+
+        }
+        .title-font {
+            font-size: 24px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            line-height: 28px;
+            margin-bottom: 5px;
+        }
+        .font {
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        .phone {
+            background-image: url("raster2.png");
+            background-size: cover;
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            margin-right: 7px;
+        }
+        .mail {
+            background-image: url("raster3.png");
+            background-size: cover;
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            margin-right: 7px;
+        }
+        .cont-wrapper {
+            max-width: 636px;
+            padding: 0 15px 0 15px;
+            margin: auto;
+        }
+        @media screen and (max-width: 606px) {
+            .dot {
+
+            }
+            .list {
+                flex-flow: column;
+                height: 180px;
+            }
+            .info {
+                flex-flow: column;
+            }
+            .info__item {
+                text-align: center;
+                margin-bottom: 10px;
+
+            }
+            .column {
+                width: 100%;
+            }
+            .img-wrapper {
+                display: none;
+            }
+
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="cont-wrapper">
+    <div class="cont">
+        <div class="main">
+            <div class="main-text">
+                <div class="header">
+                    <div class="title-font">
+                        Kompleksowe usługi pogrzebowe
+                    </div>
+                    <div class="font">
+                        Robert Kur
+                    </div>
+                </div>
+                <div class="info font">
+                    <div class="column">
+                        <div class="info__item">
+                            <div>Postoliska</div>
+                            <div>ul. Starowiejska 2</div>
+                            <div>05-240 Tłuszcz</div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div>
+                            <div class="info__item">
+                                <div class="phone"></div>
+                                <a href="tel:602285152">602 285 152</a>
+                            </div>
+                            <div class="info__item">
+                                <div class="phone"></div>
+                                <a href="tel:660407686">660 407 686</a>
+                            </div>
+                            <div class="info__item">
+                                <div class="mail"></div>
+                                <a href="mailto:annakur2@wp.pl">annakur2@wp.pl</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-wrapper">
+                <img src="raster.jpeg">
+            </div>
+        </div>
+
+        <div class="list">
+            <div>
+                Trumny
+            </div>
+            <div class="dot"></div>
+            <div>
+                Chłodnia
+            </div>
+            <div class="dot"></div>
+            <div>
+                Transport zwłok
+            </div>
+            <div class="dot"></div>
+            <div>
+                Grabarstwo
+            </div>
+            <div class="dot"></div>
+            <div>
+                Grobowce
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
